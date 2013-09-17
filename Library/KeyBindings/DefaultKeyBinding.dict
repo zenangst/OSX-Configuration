@@ -178,6 +178,8 @@
 	<string>noop:</string>
 	<key>^s</key>
 	<array>
+		<string>moveRight:</string>
+		<string>moveLeft:</string>
 		<string>moveDown:</string>
 		<string>selectWord:</string>
 	</array>
@@ -188,6 +190,7 @@
 	<key>^w</key>
 	<array>
 		<string>moveUp:</string>
+		<string>moveRight:</string>
 		<string>selectWord:</string>
 	</array>
 	<key>^x</key>
