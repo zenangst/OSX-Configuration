@@ -3,7 +3,7 @@
 ### Download
 
 ```
-git clone git://github.com/zenangst/ZENFramework.git
+git clone git@github.com:zenangst/OSX-Configuration.git
 ```
 
 ### Install
