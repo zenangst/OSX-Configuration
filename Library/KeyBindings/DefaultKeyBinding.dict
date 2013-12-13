@@ -11,13 +11,15 @@
 	<key>
 </key>
 	<string>insertNewline:</string>
-	<key></key>
+	<key>
+</key>
 	<string>insertNewline:</string>
 	<key></key>
 	<string>insertBacktab:</string>
 	<key></key>
 	<string>cancelOperation:</string>
-	<key>$</key>
+	<key>$
+</key>
 	<array>
 		<string>moveToBeginningOfLine:</string>
 		<string>moveLeft:</string>
@@ -41,6 +43,12 @@
 	<string>pageDownAndModifySelection:</string>
 	<key>@</key>
 	<string>noop:</string>
+	<key>@
+</key>
+	<array>
+		<string>moveToEndOfLine:</string>
+		<string>insertNewline:</string>
+	</array>
 	<key>@ </key>
 	<string>cycleToNextInputScript:</string>
 	<key>@$</key>
@@ -87,7 +95,6 @@
 		<string>moveToBeginningOfParagraph:</string>
 		<string>moveToEndOfParagraphAndModifySelection:</string>
 		<string>deleteForward:</string>
-		<string>deleteForward:</string>
 	</array>
 	<key>@</key>
 	<string>deleteToBeginningOfLine:</string>
@@ -108,7 +115,8 @@
 	<key>^
 </key>
 	<string>insertLineBreak:</string>
-	<key>^</key>
+	<key>^
+</key>
 	<string>insertLineBreak:</string>
 	<key>^</key>
 	<string>selectPreviousKeyView:</string>
@@ -149,7 +157,7 @@
 	<key>^b</key>
 	<string>moveBackward:</string>
 	<key>^c</key>
-	<string>moveWordForward:</string>
+	<string>selectNextKeyView:</string>
 	<key>^d</key>
 	<array>
 		<string>moveRight:</string>
@@ -160,11 +168,13 @@
 	<key>^f</key>
 	<string>centerSelectionInVisibleArea:</string>
 	<key>^h</key>
-	<string>deleteBackward:</string>
+	<string>moveLeft:</string>
+	<key>^j</key>
+	<string>moveDown:</string>
 	<key>^k</key>
-	<string>deleteToEndOfParagraph:</string>
+	<string>moveUp:</string>
 	<key>^l</key>
-	<string>centerSelectionInVisibleArea:</string>
+	<string>moveRight:</string>
 	<key>^n</key>
 	<string>moveDown:</string>
 	<key>^o</key>
@@ -186,7 +196,7 @@
 	<key>^t</key>
 	<string>transpose:</string>
 	<key>^v</key>
-	<string>pageDown:</string>
+	<string>noop:</string>
 	<key>^w</key>
 	<array>
 		<string>moveUp:</string>
@@ -194,11 +204,11 @@
 		<string>selectWord:</string>
 	</array>
 	<key>^x</key>
-	<string>deleteForward:</string>
+	<string>deleteBackward:</string>
 	<key>^y</key>
 	<string>yank:</string>
 	<key>^z</key>
-	<string>moveWordBackward:</string>
+	<string>selectPreviousKeyView:</string>
 	<key>^~x</key>
 	<array>
 		<string>moveToBeginningOfParagraph:</string>
@@ -226,7 +236,8 @@
 	<key>~
 </key>
 	<string>insertNewlineIgnoringFieldEditor:</string>
-	<key>~</key>
+	<key>~
+</key>
 	<string>insertNewlineIgnoringFieldEditor:</string>
 	<key>~</key>
 	<string>complete:</string>
@@ -257,7 +268,7 @@
 	<key>~W</key>
 	<string>moveUpAndModifySelection:</string>
 	<key>~X</key>
-	<string>deleteBackward:</string>
+	<string>deleteForward:</string>
 	<key>~Z</key>
 	<string>moveToBeginningOfParagraphAndModifySelection:</string>
 	<key>~^B</key>
@@ -272,10 +283,16 @@
 	<string>moveRight:</string>
 	<key>~f</key>
 	<string>centerSelectionInVisibleArea:</string>
-	<key>~l</key>
+	<key>~h</key>
 	<string>moveLeft:</string>
-	<key>~p</key>
+	<key>~j</key>
+	<string>moveDown:</string>
+	<key>~k</key>
 	<string>moveUp:</string>
+	<key>~l</key>
+	<string>moveRight:</string>
+	<key>~o</key>
+	<string>moveToBeginningOfParagraph:</string>
 	<key>~r</key>
 	<string>moveToEndOfParagraph:</string>
 	<key>~s</key>
@@ -283,21 +300,25 @@
 	<key>~w</key>
 	<string>moveUp:</string>
 	<key>~x</key>
-	<string>deleteForward:</string>
+	<string>deleteBackward:</string>
 	<key>~z</key>
 	<string>moveWordLeft:</string>
 	<key>~</key>
 	<string>deleteWordBackward:</string>
 	<key>~§</key>
 	<string>noop:</string>
+	<key>~å</key>
+	<string>moveUp:</string>
 	<key>~Ä</key>
 	<string>moveRightAndModifySelection:</string>
 	<key>~Ö</key>
 	<string>moveDownAndModifySelection:</string>
 	<key>~ä</key>
-	<string>moveRight:</string>
-	<key>~ö</key>
 	<string>moveDown:</string>
+	<key>~ö</key>
+	<string>moveLeft:</string>
+	<key>~'</key>
+	<string>moveRight:</string>
 	<key>~</key>
 	<array>
 		<string>moveBackward:</string>
