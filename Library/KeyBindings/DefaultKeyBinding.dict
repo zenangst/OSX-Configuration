@@ -255,15 +255,15 @@
 	<string>moveLeftAndModifySelection:</string>
 	<key>~C</key>
 	<string>moveToEndOfParagraphAndModifySelection:</string>
-	<key>~D</key>
+	<key>~*</key>
 	<string>moveRightAndModifySelection:</string>
-	<key>~L</key>
+	<key>~Ö</key>
 	<string>moveLeftAndModifySelection:</string>
-	<key>~P</key>
+	<key>~Å</key>
 	<string>moveUpAndModifySelection:</string>
 	<key>~R</key>
 	<string>moveToBeginningOfParagraph:</string>
-	<key>~S</key>
+	<key>~Ä</key>
 	<string>moveDownAndModifySelection:</string>
 	<key>~W</key>
 	<string>moveUpAndModifySelection:</string>
@@ -291,8 +291,6 @@
 	<string>moveUp:</string>
 	<key>~l</key>
 	<string>moveRight:</string>
-	<key>~o</key>
-	<string>moveToBeginningOfParagraph:</string>
 	<key>~r</key>
 	<string>moveToEndOfParagraph:</string>
 	<key>~s</key>
@@ -309,10 +307,6 @@
 	<string>noop:</string>
 	<key>~å</key>
 	<string>moveUp:</string>
-	<key>~Ä</key>
-	<string>moveRightAndModifySelection:</string>
-	<key>~Ö</key>
-	<string>moveDownAndModifySelection:</string>
 	<key>~ä</key>
 	<string>moveDown:</string>
 	<key>~ö</key>
