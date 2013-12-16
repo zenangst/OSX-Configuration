@@ -275,7 +275,7 @@
 	<key>~j</key>
 	<string>moveDown:</string>
 	<key>~k</key>
-	<string>moveDown:</string>
+	<string>moveUp:</string>
 	<key>~l</key>
 	<string>moveLeft:</string>
 	<key>~p</key>
