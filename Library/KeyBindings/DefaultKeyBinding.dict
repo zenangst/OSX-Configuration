@@ -287,7 +287,7 @@
 	<key>~w</key>
 	<string>moveUp:</string>
 	<key>~x</key>
-	<string>deleteForward:</string>
+	<string>deleteBackward:</string>
 	<key>~z</key>
 	<string>moveWordLeft:</string>
 	<key>~</key>
