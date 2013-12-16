@@ -1,4 +1,6 @@
-#/bin/sh
-rm -rf ~/Library/KeyBindings
-mkdir ~/Library/KeyBindings/
-cp Library/KeyBindings/DefaultKeyBinding.dict ~/Library/KeyBindings/
+#!/bin/sh
+TARGET="$(eval echo ~${SUDO_USER})/Library/KeyBindings"
+if [ ! -d "$TARGET" ]; then
+  mkdir $TARGET
+fi
+cp Library/KeyBindings/DefaultKeyBinding.dict $TARGET
