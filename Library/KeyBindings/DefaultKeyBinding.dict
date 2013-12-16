@@ -194,7 +194,7 @@
 		<string>selectWord:</string>
 	</array>
 	<key>^x</key>
-	<string>deleteForward:</string>
+	<string>deleteBackward:</string>
 	<key>^y</key>
 	<string>yank:</string>
 	<key>^z</key>
@@ -257,7 +257,7 @@
 	<key>~W</key>
 	<string>moveUpAndModifySelection:</string>
 	<key>~X</key>
-	<string>deleteBackward:</string>
+	<string>deleteForward:</string>
 	<key>~Z</key>
 	<string>moveToBeginningOfParagraphAndModifySelection:</string>
 	<key>~^B</key>
@@ -272,6 +272,10 @@
 	<string>moveRight:</string>
 	<key>~f</key>
 	<string>centerSelectionInVisibleArea:</string>
+	<key>~j</key>
+	<string>moveDown:</string>
+	<key>~k</key>
+	<string>moveDown:</string>
 	<key>~l</key>
 	<string>moveLeft:</string>
 	<key>~p</key>
