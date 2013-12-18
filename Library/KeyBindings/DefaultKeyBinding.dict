@@ -11,13 +11,15 @@
 	<key>
 </key>
 	<string>insertNewline:</string>
-	<key></key>
+	<key>
+</key>
 	<string>insertNewline:</string>
 	<key></key>
 	<string>insertBacktab:</string>
 	<key></key>
 	<string>cancelOperation:</string>
-	<key>$</key>
+	<key>$
+</key>
 	<array>
 		<string>moveToBeginningOfLine:</string>
 		<string>moveLeft:</string>
@@ -57,6 +59,8 @@
 	<string>togglePlatformInputSystem:</string>
 	<key>@^a</key>
 	<string>moveLeft:</string>
+	<key>@^c</key>
+	<string>selectNextKeyView:</string>
 	<key>@^d</key>
 	<string>moveRight:</string>
 	<key>@^f</key>
@@ -68,6 +72,10 @@
 	<string>moveDown:</string>
 	<key>@^w</key>
 	<string>moveUp:</string>
+	<key>@^x</key>
+	<string>selectPreviousKeyView:</string>
+	<key>@^z</key>
+	<string>selectPreviousKeyView:</string>
 	<key>@^</key>
 	<string>makeBaseWritingDirectionNatural:</string>
 	<key>@^</key>
@@ -108,7 +116,8 @@
 	<key>^
 </key>
 	<string>insertLineBreak:</string>
-	<key>^</key>
+	<key>^
+</key>
 	<string>insertLineBreak:</string>
 	<key>^</key>
 	<string>selectPreviousKeyView:</string>
@@ -199,12 +208,16 @@
 	<string>yank:</string>
 	<key>^z</key>
 	<string>moveWordBackward:</string>
+	<key>^~c</key>
+	<string>selectNextKeyView:</string>
 	<key>^~x</key>
 	<array>
 		<string>moveToBeginningOfParagraph:</string>
 		<string>moveToEndOfParagraphAndModifySelection:</string>
 		<string>deleteForward:</string>
 	</array>
+	<key>^~z</key>
+	<string>selectPreviousKeyView:</string>
 	<key>^~</key>
 	<string>deleteWordBackward:</string>
 	<key>^</key>
@@ -226,7 +239,8 @@
 	<key>~
 </key>
 	<string>insertNewlineIgnoringFieldEditor:</string>
-	<key>~</key>
+	<key>~
+</key>
 	<string>insertNewlineIgnoringFieldEditor:</string>
 	<key>~</key>
 	<string>complete:</string>
