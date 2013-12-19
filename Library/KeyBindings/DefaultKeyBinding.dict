@@ -61,9 +61,9 @@
 	<string>moveLeft:</string>
 	<key>@^d</key>
 	<string>moveRight:</string>
-	<key>@E</key>
+	<key>@V</key>
 	<string>selectNextKeyView:</string>
-	<key>@Q</key>
+	<key>@C</key>
 	<string>selectPreviousKeyView:</string>
 	<key>@^f</key>
 	<array>
