@@ -59,10 +59,12 @@
 	<string>togglePlatformInputSystem:</string>
 	<key>@^a</key>
 	<string>moveLeft:</string>
-	<key>@^c</key>
-	<string>selectNextKeyView:</string>
 	<key>@^d</key>
 	<string>moveRight:</string>
+	<key>@E</key>
+	<string>selectNextKeyView:</string>
+	<key>@Q</key>
+	<string>selectPreviousKeyView:</string>
 	<key>@^f</key>
 	<array>
 		<string>moveToBeginningOfParagraph:</string>
@@ -72,10 +74,6 @@
 	<string>moveDown:</string>
 	<key>@^w</key>
 	<string>moveUp:</string>
-	<key>@^x</key>
-	<string>selectPreviousKeyView:</string>
-	<key>@^z</key>
-	<string>selectPreviousKeyView:</string>
 	<key>@^</key>
 	<string>makeBaseWritingDirectionNatural:</string>
 	<key>@^</key>

@@ -5,16 +5,16 @@ defaults write com.apple.dock launchanim -bool no
 echo "Disable Dock magnification"
 defaults write com.apple.dock magnification -bool no
 echo "Set Dock position to left"
-defaults write com.apple.dock orientation -string left
+defaults write com.apple.dock orientation -string bottom
 echo "Set Dock pinning position to top"
-defaults write com.apple.dock pinning -string start
+defaults write com.apple.dock pinning -string center
 echo "Set Dock autohide time to 0.1"
 defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -float 0.1
-echo "Set Dock minimize effect to suck"
-defaults write com.apple.Dock mineffect -string suck
+echo "Set Dock minimize effect to scale (genie, scale, suck)"
+defaults write com.apple.Dock mineffect -string genie
 echo "Set Dock tile size"
-defaults write com.apple.dock tilesize -int 32
+defaults write com.apple.dock tilesize -int 48
 
 echo "============EXPOSE============"
 echo "Set Expose animation duration to 0.1"
