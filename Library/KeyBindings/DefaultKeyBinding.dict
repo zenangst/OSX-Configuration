@@ -65,6 +65,8 @@
 	<string>selectNextKeyView:</string>
 	<key>@C</key>
 	<string>selectPreviousKeyView:</string>
+	<key>@X</key>
+	<string>selectPreviousKeyView:</string>
 	<key>@^f</key>
 	<array>
 		<string>moveToBeginningOfParagraph:</string>
@@ -290,6 +292,8 @@
 	<string>moveUp:</string>
 	<key>~l</key>
 	<string>moveLeft:</string>
+	<key>~o</key>
+	<string>pageDown:</string>
 	<key>~p</key>
 	<string>moveUp:</string>
 	<key>~r</key>
@@ -302,6 +306,8 @@
 	<string>deleteBackward:</string>
 	<key>~z</key>
 	<string>moveWordLeft:</string>
+	<key>~å</key>
+	<string>pageUp:</string>
 	<key>~</key>
 	<string>deleteWordBackward:</string>
 	<key>~§</key>
