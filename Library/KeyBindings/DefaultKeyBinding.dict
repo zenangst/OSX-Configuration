@@ -293,7 +293,7 @@
 	<key>~l</key>
 	<string>moveLeft:</string>
 	<key>~o</key>
-	<string>pageDown:</string>
+	<string>moveToEndOfParagraph:</string>
 	<key>~p</key>
 	<string>moveUp:</string>
 	<key>~r</key>
@@ -307,7 +307,7 @@
 	<key>~z</key>
 	<string>moveWordLeft:</string>
 	<key>~å</key>
-	<string>pageUp:</string>
+	<string>moveToBeginningOfParagraph:</string>
 	<key>~</key>
 	<string>deleteWordBackward:</string>
 	<key>~§</key>

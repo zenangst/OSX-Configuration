@@ -29,7 +29,7 @@ defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
 defaults write NSGlobalDomain AppleShowScrollBars -string "Automatic"
 
 # Close windows when quitting an application
-defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool false
+defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool true
 
 # FIXME Modify the number of items in the Open Recent menu
 defaults write -g 'NSRecentDocumentsLimit' -int 0
@@ -108,16 +108,6 @@ echo "  -> Desktop"
 
 ### Pref Pane ###
 
-# Solid Colors: black
-#rm "$HOME/Library/Preferences/com.apple.desktop.plist" > /dev/null 2>&1
-#/usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.desktop.plist" -c 'Add Background:default:BackgroundColor array' > /dev/null 2>&1
-#/usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.desktop.plist" -c 'Add Background:default:BackgroundColor:0 real 0'
-#/usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.desktop.plist" -c 'Add Background:default:BackgroundColor:1 real 0'
-#/usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.desktop.plist" -c 'Add Background:default:BackgroundColor:2 real 0'
-#/usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.desktop.plist" -c 'Add Background:default:DrawBackgroundColor bool true'
-#/usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.desktop.plist" -c 'Add Background:default:ImageFilePath string /System/Library/PreferencePanes/DesktopScreenEffectsPref.prefPane/Contents/Resources/DesktopPictures.prefPane/Contents/Resources/Transparent.png'
-#/usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.desktop.plist" -c 'Add Background:default:NoImage bool true'
-
 # Menu bar transparency
 defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool true
 
@@ -140,7 +130,7 @@ defaults -currentHost write com.apple.systemuiserver dontAutoLoad -array-add  "/
 defaults write com.apple.systemuiserver 'menuExtras' -array '/Library/Application\ Support/iStat\ local/extras/MenuCracker.menu' '/System/Library/CoreServices/Menu Extras/TextInput.menu' '/System/Library/CoreServices/Menu Extras/AirPort.menu' '/System/Library/CoreServices/Menu Extras/Battery.menu' '/System/Library/CoreServices/Menu Extras/Clock.menu' 
 
 # Save screenshots to the desktop
-defaults write com.apple.screencapture location -string "$HOME/Desktop"
+defaults write com.apple.screencapture location -string "$HOME/Pictures/Screenshots"
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string "png"
@@ -214,7 +204,7 @@ defaults write com.apple.dock autohide-time-modifier -int 0
 defaults write com.apple.dock autohide-delay -float 0
 
 # Reset Launchpad
-find ~/Library/Application\ Support/Dock -name "*.db" -maxdepth 1 -delete
+#find ~/Library/Application\ Support/Dock -name "*.db" -maxdepth 1 -delete
 
 # Dock App Icons
 defaults write com.apple.dock 'checked-for-launchpad' -bool true
@@ -283,7 +273,7 @@ defaults write com.apple.dock expose-animation-duration -float 0.1
 echo "  -> Language"
 
 # Disable auto-correct
-defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool true
 
 # FIXME Add Russian phonetic keyboard
 defaults -currentHost write com.apple.HIToolbox AppleEnabledInputSources -array-add '{ InputSourceKind="Keyboard Layout"; "KeyboardLayout ID"=0; "KeyboardLayout Name"="US";}' '{ InputSourceKind="Keyboard Layout"; "KeyboardLayout ID"=19457; "KeyboardLayout Name"="Russian - Phonetic";}'
@@ -422,10 +412,10 @@ defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 37 '<dic
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 # Require fn key for special functions 
-defaults write NSGlobalDomain com.apple.keyboard.fnState -bool true
+defaults write NSGlobalDomain com.apple.keyboard.fnState -bool false
 
 # Disable press-and-hold for keys in favor of key repeat
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+defaults write -g ApplePressAndHoldEnabled -bool true
 
 # Automatically illuminate keyboard in low light: on
 defaults write com.apple.BezelServices 'kDim' -bool true
@@ -516,7 +506,8 @@ defaults write com.apple.dock showDesktopGestureEnabled -int 1
 echo "  -> Sound"
 
 # Select an alert sound: Sosumi
-defaults write com.apple.systemsound 'com.apple.sound.beep.sound' -string '/System/Library/Sounds/Sosumi.aiff'
+#defaults write com.apple.systemsound 'com.apple.sound.beep.sound' -string '/System/Library/Sounds/Sosumi.aiff'
+defaults write com.apple.systemsound 'com.apple.sound.beep.sound' -string '/Users/christofferwinterkvist/Library/Sounds/Silence.aiff'
 
 # Don't play user interface sound effects
 defaults write com.apple.systemsound 'com.apple.sound.uiaudio.enabled' -int 0
