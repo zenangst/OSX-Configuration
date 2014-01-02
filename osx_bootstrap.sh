@@ -661,7 +661,7 @@ echo -n 'a' | sudo tee /private/var/db/.AccessibilityAPIEnabled > /dev/null 2>&1
 sudo chmod 444 /private/var/db/.AccessibilityAPIEnabled
 
 # Zoom: Options… > Smooth images (Press ⌥ ⌘\ to turn smoothing on or off): off
-defaults write com.apple.universalaccess 'closeViewSmoothImages' -bool false
+defaults write com.apple.universalaccess 'closeViewSmoothImages' -bool true
 
 # Zoom: Options… > Use scroll wheel with modifier keys to zoom: on
 defaults write com.apple.universalaccess 'closeViewScrollWheelToggle' -bool true
