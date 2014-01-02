@@ -22,7 +22,7 @@ defaults write -g 'AppleAquaColorVariant' -int 1
 # Highlight color: #CC99CC
 defaults write -g 'AppleHighlightColor' -string '0.803865 0.877834 0.999508'
 
-# Sidebar icon size: small
+# Sidebar icon size: medium
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
 
 # Always show scroll bars
@@ -409,7 +409,7 @@ defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 37 '<dic
 
 # Enable full keyboard access for all controls
 # (e.g. enable Tab in modal dialogs)
-defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 1
 
 # Require fn key for special functions 
 defaults write NSGlobalDomain com.apple.keyboard.fnState -bool false
