@@ -214,6 +214,8 @@ defaults write com.apple.dock 'checked-for-launchpad' -bool true
 
 defaults write com.apple.dock 'persistent-apps' -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Mission Control.app/</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 
+defaults write com.apple.dock 'persistent-apps' -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Dashboard.app/</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+
 defaults write com.apple.dock 'persistent-apps' -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Mail.app/</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 
 defaults write com.apple.dock 'persistent-apps' -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Calendar.app/</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
@@ -507,7 +509,7 @@ echo "  -> Sound"
 
 # Select an alert sound: Sosumi
 #defaults write com.apple.systemsound 'com.apple.sound.beep.sound' -string '/System/Library/Sounds/Sosumi.aiff'
-defaults write com.apple.systemsound 'com.apple.sound.beep.sound' -string '/Users/christofferwinterkvist/Library/Sounds/Silence.aiff'
+defaults write com.apple.systemsound 'com.apple.sound.beep.sound' -string '$HOME/Library/Sounds/Silence.aiff'
 
 # Don't play user interface sound effects
 defaults write com.apple.systemsound 'com.apple.sound.uiaudio.enabled' -int 0
