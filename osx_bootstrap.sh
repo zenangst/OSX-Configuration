@@ -228,6 +228,8 @@ defaults write com.apple.dock 'persistent-apps' -array-add '<dict><key>tile-data
 
 defaults write com.apple.dock 'persistent-apps' -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Notes.app/</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 
+defaults write com.apple.dock 'persistent-apps' -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Preview.app/</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+
 defaults write com.apple.dock 'persistent-apps' -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Utilities/Terminal.app/</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 
 defaults write com.apple.dock 'persistent-apps' -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/iTunes.app/</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
@@ -240,6 +242,11 @@ defaults write com.apple.dock 'persistent-apps' -array-add '<dict><key>tile-data
 
 defaults write com.apple.dock 'persistent-apps' -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Preview.app/</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 
+defaults write com.apple.dock 'persistent-apps' -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Pages.app/</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+
+defaults write com.apple.dock 'persistent-apps' -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Numbers.app/</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+
+defaults write com.apple.dock 'persistent-apps' -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Keynote.app/</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 
 ###############################################################################
 # Mission Control
