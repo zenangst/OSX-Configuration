@@ -1,5 +1,5 @@
 {
-	// Shift+Command
+	// Control+Command
 	"@^w" = (moveUp:);
 	"@^d" = (moveRight:);
 	"@^s" = (moveDown:);
@@ -20,6 +20,8 @@
 	"~u" = (lowercaseWord:);
 	"~å" = (moveToBeginningOfParagraph:);
 	"~o" = (moveToEndOfParagraph:);
+	
+	"~x" = (deleteBackward:);
 	
 	// Shift+Control+Command
 	"@^A" = (moveToBeginningOfParagraphAndModifySelection:);
@@ -44,6 +46,9 @@
 	"^~c" = (selectNextKeyView:);
 	"^~x" = (moveToBeginningOfParagraph:, moveToEndOfParagraphAndModifySelection:, deleteForward:);
 	"^~z" = (selectPreviousKeyView:);
+	
+	// Shift+Control
+	"^L" = (selectParagraph:);
 	
 	// Shift+Command
 	"@V" = (selectNextKeyView:);
@@ -83,7 +88,7 @@
 	  // paste before
 	  "P" = (breakUndoCoalescing:, moveToBeginningOfParagraph:, moveLeft:,insertNewline:, paste:);
 	  // yank
-	  "y" = (setMark:, moveToBeginningOfParagraph:, moveToEndOfParagraphAndModifySelection:, copy:, swapWithMark:);
+	  "y" = (setMark:, moveToBeginningOfParagraphAndModifySelection:, moveToEndOfParagraphAndModifySelection:, copy:, swapWithMark:);
 	  "d" = { // Delete
 	      // 'dd' delete line/paragraph
 	      "d" = (setMark:, selectParagraph:, delete:, delete:, swapWithMark:);
@@ -125,7 +130,7 @@
 	};
 	
 	// TextMate Command-Return (Command Enter)
-  "@\U000D" = (moveToEndOfParagraph:, insertNewline:);
+  "^\U000D" = (moveToEndOfParagraph:, insertNewline:);
   // Insert blank line above paragraph (Command Shift Enter)
   "@$\U000D" = (moveToBeginningOfParagraph:, moveLeft:, insertNewline:);
 // > Command Option Enter
