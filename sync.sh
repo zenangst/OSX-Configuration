@@ -35,10 +35,6 @@ if [ "$1" = "push" ]; then
   mv -f $HOME/Library/Mobile\ Documents/iCloud/Containers/com.panic.Coda2/Data/Library/Application\ Support/Coda\ 2/Completions $TARGET
   cp -R $HOME/Library/Containers/com.panic.Coda2/Data/Library/Application\ Support/Coda\ 2/Completions $HOME/Library/Mobile\ Documents/iCloud/Containers/com.panic.Coda2/Data/Library/Application\ Support/Coda\ 2/
   
-  echo "  Modes"
-  mv -f $HOME/Library/Mobile\ Documents/iCloud/Containers/com.panic.Coda2/Data/Library/Application\ Support/Coda\ 2/Modes $TARGET
-  cp -R $HOME/Library/Containers/com.panic.Coda2/Data/Library/Application\ Support/Coda\ 2/Modes $HOME/Library/Mobile\ Documents/iCloud/Containers/com.panic.Coda2/Data/Library/Application\ Support/Coda\ 2/
-  
   echo "  Plug-ins"
   mv -f $HOME/Library/Mobile\ Documents/iCloud/Containers/com.panic.Coda2/Data/Library/Application\ Support/Coda\ 2/Plug-ins $TARGET
   cp -R $HOME/Library/Containers/com.panic.Coda2/Data/Library/Application\ Support/Coda\ 2/Plug-ins $HOME/Library/Mobile\ Documents/iCloud/Containers/com.panic.Coda2/Data/Library/Application\ Support/Coda\ 2/
@@ -86,10 +82,6 @@ if [ "$1" = "push" ]; then
   mv -f $HOME/Library/Mobile\ Documents/iCloud/Preferences/com.apple.reminders.plist $TARGET
   cp $HOME/Library/Preferences/com.apple.reminders.plist $HOME/Library/Mobile\ Documents/iCloud/Preferences
 
-  echo "🌊 Syncing Safari"
-  mv -f $HOME/Library/Mobile\ Documents/iCloud/Preferences/com.apple.Safari.plist $TARGET
-  cp $HOME/Library/Preferences/com.apple.Safari.plist $HOME/Library/Mobile\ Documents/iCloud/Preferences
-
   echo "🌀 Syncing Quicksilver"
   mv -f $HOME/Library/Mobile\ Documents/iCloud/Preferences/com.blacktree.Quicksilver.plist $TARGET
   mv -f $HOME/Library/Mobile\ Documents/iCloud/Application\ Support/Quicksilver $TARGET
@@ -120,15 +112,15 @@ if [ "$1" = "pull" ]; then
   echo "  Clips"
   mv -f $HOME/Library/Containers/com.panic.Coda2/Data/Library/Application\ Support/Coda\ 2/Clips $TARGET
   cp -R $HOME/Library/Mobile\ Documents/iCloud/Containers/com.panic.Coda2/Data/Library/Application\ Support/Coda\ 2/Clips  $HOME/Library/Containers/com.panic.Coda2/Data/Library/Application\ Support/Coda\ 2
+
   echo "  Completions"
   mv -f $HOME/Library/Containers/com.panic.Coda2/Data/Library/Application\ Support/Coda\ 2/Completions $TARGET
   cp -R $HOME/Library/Mobile\ Documents/iCloud/Containers/com.panic.Coda2/Data/Library/Application\ Support/Coda\ 2/Completions  $HOME/Library/Containers/com.panic.Coda2/Data/Library/Application\ Support/Coda\ 2
-  echo "  Modes"
-  mv -f $HOME/Library/Containers/com.panic.Coda2/Data/Library/Application\ Support/Coda\ 2/Modes $TARGET
-  cp -R $HOME/Library/Mobile\ Documents/iCloud/Containers/com.panic.Coda2/Data/Library/Application\ Support/Coda\ 2/Modes  $HOME/Library/Containers/com.panic.Coda2/Data/Library/Application\ Support/Coda\ 2
+  
   echo "  Plug-ins"
   mv -f $HOME/Library/Containers/com.panic.Coda2/Data/Library/Application\ Support/Coda\ 2/Plug-ins $TARGET
   cp -R $HOME/Library/Mobile\ Documents/iCloud/Containers/com.panic.Coda2/Data/Library/Application\ Support/Coda\ 2/Plug-ins  $HOME/Library/Containers/com.panic.Coda2/Data/Library/Application\ Support/Coda\ 2
+
   echo "  Preferences"
   mv -f $HOME/Library/Preferences/com.panic.coda.CodaIndexer.plist $TARGET
   mv -f $HOME/Library/Preferences/com.panic.Coda2.plist $TARGET
@@ -176,11 +168,6 @@ if [ "$1" = "pull" ]; then
   cp  $HOME/Library/Mobile\ Documents/iCloud/Preferences/com.apple.reminders.plist $HOME/Library/Containers/com.apple.reminders/Data/Library/Preferences 
   #/usr/bin/defaults read com.apple.reminders.plist
 
-  echo "🌊 Syncing Safari"
-  mv -f $HOME/Library/Preferences/com.apple.Safari.plist $TARGET
-  cp  $HOME/Library/Mobile\ Documents/iCloud/Preferences/com.apple.Safari.plist $HOME/Library/Preferences
-  #/usr/bin/defaults read com.apple.Safari.plist
-  
   echo "🌀 Syncing Quicksilver"
   mv -f $HOME/Library/Application\ Support/Quicksilver $TARGET
   mv -f $HOME/Library/Preferences/com.blacktree.Quicksilver.plist $TARGET
