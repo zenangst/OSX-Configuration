@@ -101,12 +101,10 @@ if [ "$1" = "pull" ]; then
   echo "📅 Syncing Calendar"
   mv -f $HOME/Library/Preferences/com.apple.iCal.plist $TARGET
   cp $HOME/Library/Mobile\ Documents/iCloud/Preferences/com.apple.iCal.plist $HOME/Library/Preferences
-  #/usr/bin/defaults read com.apple.iCal.plist
 
   echo "📇 Syncing Contacts"
   mv -f $HOME/Library/Preferences/com.apple.AddressBook.plist $TARGET
   cp $HOME/Library/Mobile\ Documents/iCloud/Preferences/com.apple.AddressBook.plist $HOME/Library/Preferences
-  #/usr/bin/defaults read com.apple.AddressBook.plist
 
   echo "🍃 Syncing Coda 2"
   echo "  Clips"
@@ -155,18 +153,15 @@ if [ "$1" = "pull" ]; then
   echo "📥 Syncing Mail"
   mv -f $HOME/Library/Preferences/com.apple.mail*.plist $TARGET
   cp  $HOME/Library/Mobile\ Documents/iCloud/Preferences/com.apple.mail*.plist $HOME/Library/Preferences
-  #/usr/bin/defaults read com.apple.mail.plist
 
   echo "💬 Syncing Messages"
   mv -f $HOME/Library/Preferences/com.apple.iChat*.plist $TARGET
   cp  $HOME/Library/Mobile\ Documents/iCloud/Preferences/com.apple.iChat*.plist $HOME/Library/Preferences
-  #/usr/bin/defaults read com.apple.iChat.plist
 
   echo "☑️ Syncing Reminders"
   mv -f $HOME/Library/Preferences/com.apple.reminders.plist $TARGET
   cp  $HOME/Library/Mobile\ Documents/iCloud/Preferences/com.apple.reminders.plist $HOME/Library/Preferences  
   cp  $HOME/Library/Mobile\ Documents/iCloud/Preferences/com.apple.reminders.plist $HOME/Library/Containers/com.apple.reminders/Data/Library/Preferences 
-  #/usr/bin/defaults read com.apple.reminders.plist
 
   echo "🌀 Syncing Quicksilver"
   mv -f $HOME/Library/Application\ Support/Quicksilver $TARGET
